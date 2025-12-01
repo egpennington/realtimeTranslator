@@ -1,9 +1,9 @@
 const CACHE_NAME = 'linguaflash-v1';
+const CACHE_VERSION = 'v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.json',
-  'https://cdn.tailwindcss.com'
 ];
 
 self.addEventListener('install', (event) => {

@@ -6,27 +6,7 @@
     <title>LinguaFlash - AI Translator</title>
     <meta name="description" content="Instant English to Korean/Japanese translator." />
     <meta name="theme-color" content="#2563eb" />
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#2563eb',
-              secondary: '#1e40af',
-              surface: '#f3f4f6',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            }
-          }
-        }
-      }
-    </script>
-
-    <!-- PWA Manifest -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="/manifest.json" />
     
     <!-- Favicon (Data URI for instant visual) -->
@@ -34,32 +14,10 @@
     
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="https://placehold.co/192x192/2563eb/ffffff?text=LF" />
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
+  
 </head>
   <body class="bg-surface text-gray-900 antialiased min-h-screen flex flex-col">
     <div id="root" class="flex-1 flex flex-col"></div>
-    
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-              console.log('SW registered: ', registration);
-            })
-            .catch(registrationError => {
-              console.log('SW registration failed: ', registrationError);
-            });
-        });
-      }
-    </script>
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>
