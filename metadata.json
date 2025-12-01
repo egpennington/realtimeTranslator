@@ -1,0 +1,5 @@
+{
+  "name": "LinguaFlash",
+  "description": "Real-time AI translator for English to Korean and Japanese with PWA support.",
+  "requestFramePermissions": []
+}
