@@ -1,20 +1,95 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# LinguaFlash
 
-# Run and deploy your AI Studio app
+A Real-Time Translator that is a mobile-friendly Progressive Web App (PWA) designed for seamless, real-time text translation and accessibility.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1FUN4ZtHQQm_C6hwed9Tzu_4B9IbOtI44
+## 🌐 Live Demo
 
-## Run Locally
+🔗 **Live Site:** https://realtimetranslate.netlify.app/
 
-**Prerequisites:**  Node.js
+---
 
+## 🚀 Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Instant Translation
+Translate text in real time:
+- English → Korean
+- English → Japanese
+
+Users can select their preferred target language easily.
+
+#### Side-by-Side Display
+Original text appears on the left, translated text on the right for easy comparison.
+
+#### Text-to-Speech Support
+A “Read Aloud” button pronounces the translated text using built-in text-to-speech.
+
+#### Quick Reset
+A “Clear All” button instantly clears both text areas for a fresh start.
+
+#### PWA Features
+Offline Support
+Implemented via service worker (sw.js) for caching and offline functionality.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend Framework:** React 19
+- **Language:** TypeScript (.ts and .tsx files)
+**Styling:** Tailwind CSS
+- **AI Integration:** Google GenAI SDK (@google/genai) using gemini-2.5-flash model
+- **Web Speech API:** Native browser API (window.speechSynthesis)
+
+---
+
+## 📸 Screenshots
+
+![desktop view of LinguaFlash](/desktop_image.png)
+![mobile view of LinguaFlash](mobile_image.png)
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/egpennington/realtimeTranslator.git
+cd realtimeTranslator
+npm install
+npm run dev
+```
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the project  
+2. Create your feature branch  
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit your changes  
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to your branch  
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a Pull Request  
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 📬 Contact
+
+Emmett Pennington
+[GitHub:](https://github.com/egpennington)  
+[Live Project:](https://realtimetranslate.netlify.app/)
