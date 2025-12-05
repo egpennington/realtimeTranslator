@@ -212,7 +212,7 @@ const App: React.FC = () => {
 
       {/* Footer */}
       <footer className="py-6 text-center text-gray-400 text-xs">
-        <p>© 2024 LinguaFlash. Powered by Google Gemini.</p>
+        <p>&copy; {new Date().getFullYear()} penningtonProgramming. Powered by Google Gemini.</p>
       </footer>
     </div>
   );
